@@ -9,35 +9,32 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
-        light: "#fff",
-        accent: "#7B00D3",
-        accentDark: "#ffdb4d",
-        gray: "#747474",
+        dark: "#0A1F2C",
+        light: "#F1F6F9",
+        accent: "#1A5276",
+        accentDark: "#CB4B16",
+        gray: "#5D6D7E",
       },
       fontFamily: {
         mr: ["var(--font-mr)", "sans-serif"],
         in: ["var(--font-in)", "sans-serif"],
       },
       animation: {
-        roll:"roll 24s linear infinite",
+        roll: "roll 24s linear infinite",
       },
       keyframes: {
         roll: {
-          "0%": { transform: "translateX(100%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "0%": {transform: "translateX(100%)"},
+          "100%": {transform: "translateX(-100%)"},
         },
       },
       screens: {
-        sxl:"1180px",
+        sxl: "1180px",
         xs: "480px",
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
 };
 
 

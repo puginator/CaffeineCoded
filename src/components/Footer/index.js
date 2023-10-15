@@ -14,14 +14,13 @@ const Footer = () => {
     const onSubmit = (data) => console.log(data);
     console.log(errors);
   return (
-    <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
+    <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-medium text-center dark:font-bold capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
         Interesting Stories | Updates | Guides
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
-        Subscribe to learn about new technology and updates. Join over 5000+
-        members community to stay up to date with latest news. © 2023 CaffeineCoded.
-        All rights reserved. Made with ❤ by CaffeineCoded
+        Subscribe to learn new coffees you should try. Join other coffee loves and stay up to date with latest reviews. © 2023 CaffeineCoded.
+        All rights reserved. <br></br> Made with ❤ by CaffeineCoded
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}

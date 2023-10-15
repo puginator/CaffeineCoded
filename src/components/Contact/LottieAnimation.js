@@ -4,12 +4,10 @@ import '@dotlottie/react-player/dist/index.css';
 
 const LottieAnimation = () => {
   return (
-      <DotLottiePlayer 
-        src="/animation_ln1u9eax.lottie" 
-        autoplay 
-        loop
-      >
-      </DotLottiePlayer>
+    <DotLottiePlayer
+      src="/animation_lns1srbh.lottie"
+      autoplay
+      loop></DotLottiePlayer>
   );
 };
 
