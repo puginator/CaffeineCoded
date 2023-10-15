@@ -20,8 +20,8 @@ const Footer = () => {
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
         Subscribe to learn about new technology and updates. Join over 5000+
-        members community to stay up to date with latest news. © 2023 CodeBucks.
-        All rights reserved. Made with ❤ by CodeBucks
+        members community to stay up to date with latest news. © 2023 CaffeineCoded.
+        All rights reserved. Made with ❤ by CaffeineCoded
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
