@@ -2,18 +2,18 @@
 const siteMetadata = {
   title: "Next.js Blog With Tailwind CSS and Contentlayer",
   author: "CaffeineCoded",
-  headerTitle: "Next.js Blog",
-  description: "A blog created with Next.js, Tailwind.css and contentlayer.",
+  headerTitle: "Caffeine Coded Blog",
+  description: "A blog created with Next.js, Tailwind.css and contentlayer. Reviewing coffee brews with the help of AI",
   language: "en-us",
   theme: "system", // system, dark or light
-  siteUrl: "https://create-blog-with-nextjs.vercel.app", // your website URL
+  siteUrl: "https://caffeine-coded.vercel.app/", // your website URL
   siteLogo: "/logo.png",
   socialBanner: "/social-banner.png", // add social banner in the public folder
   email: "CaffeineCoded@gmail.com",
   github: "https://github.com/puginator",
   twitter: "https://twitter.com/CaffeineCoded",
   facebook: "https://facebook.com/",
-  youtube: "https://youtube.com/codebucks",
+  youtube: "https://youtube.com/",
   linkedin: "https://www.linkedin.com/in/austin-amento/",
   dribbble: "https://www.dribbble.com",
   locale: "en-US",
