@@ -1,6 +1,6 @@
 // please update required information
 const siteMetadata = {
-  title: "Next.js Blog With Tailwind CSS and Contentlayer",
+  title: "The Ai Barista Coffee Blog",
   author: "The Ai Barista",
   headerTitle: "Caffeine Coded Blog",
   description: "A blog created with Next.js, Tailwind.css and contentlayer. Reviewing coffee brews with the help of AI",
