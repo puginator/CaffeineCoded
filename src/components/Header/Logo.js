@@ -15,7 +15,7 @@ const Logo = () => {
         />
       </div>
       <span className="font-bold text-lg md:text-xl dark:font-semibold">
-        CaffeineCoded
+        The Ai Barista
       </span>
     </Link>
   );

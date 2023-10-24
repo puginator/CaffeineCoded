@@ -19,8 +19,8 @@ const Footer = () => {
         Interesting Stories | Updates | Guides
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
-        Subscribe to learn new coffees you should try. Join other coffee loves and stay up to date with latest reviews. © 2023 CaffeineCoded.
-        All rights reserved. <br></br> Made with ❤ by CaffeineCoded
+        Subscribe to learn new coffees you should try. Join other coffee loves and stay up to date with latest reviews. © 2023 The Ai Barista.
+        All rights reserved. <br></br> Made with ❤ by The Ai Barista
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -55,7 +55,7 @@ const Footer = () => {
       </div>
       <div className="w-full mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2023 CaffeineCoded. All rights reserved.
+          &copy;2023 The Ai Barista. All rights reserved.
         </span>
         <Link href="/sitemap.xml" className="text-center underline my-4 md:my-0">
           sitemap.xml
