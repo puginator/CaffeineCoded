@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import {useForm} from "react-hook-form";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
+import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon, PinterestIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetadata";
 
@@ -19,8 +19,9 @@ const Footer = () => {
         Interesting Stories | Updates | Guides
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
-        Subscribe to learn new coffees you should try. Join other coffee loves and stay up to date with latest reviews. © 2023 The Ai Barista.
-        All rights reserved. <br></br> Made with ❤ by The Ai Barista
+        Subscribe to learn new coffees you should try. Join other coffee loves
+        and stay up to date with latest reviews. © 2023 The Ai Barista. All
+        rights reserved. <br></br> Made with ❤ by The Ai Barista
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -49,15 +50,17 @@ const Footer = () => {
           className="inline-block w-6 h-6 mr-4 fill-light">
           <GithubIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
         </a>
-        <a href={siteMetadata.dribbble} className="inline-block w-6 h-6 mr-4">
-          <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
+        <a href={siteMetadata.pinterest} className="inline-block w-6 h-6 mr-4">
+          <PinterestIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>
       <div className="w-full mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-col md:flex-row items-center justify-between">
         <span className="text-center">
           &copy;2023 The Ai Barista. All rights reserved.
         </span>
-        <Link href="/sitemap.xml" className="text-center underline my-4 md:my-0">
+        <Link
+          href="/sitemap.xml"
+          className="text-center underline my-4 md:my-0">
           sitemap.xml
         </Link>
         <div className="text-center">

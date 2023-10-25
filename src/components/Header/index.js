@@ -1,6 +1,14 @@
 'use client'
 import siteMetadata from "@/src/utils/siteMetadata";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, MoonIcon, SunIcon, TwitterIcon } from "../Icons";
+import {
+  DribbbleIcon,
+  GithubIcon,
+  LinkedinIcon,
+  MoonIcon,
+  SunIcon,
+  TwitterIcon,
+  PinterestIcon,
+} from "../Icons";
 import Logo from "./Logo";
 import Link from "next/link";
 import { useThemeSwitch } from "../Hooks/useThemeSwitch";
@@ -108,8 +116,8 @@ const Header = () => {
         <a href={siteMetadata.github} className="inline-block w-6 h-6 mr-4">
           <GithubIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
-        <a href={siteMetadata.dribbble} className="inline-block w-6 h-6 mr-4">
-          <DribbbleIcon className="hover:scale-125 transition-all ease duration-200" />
+        <a href={siteMetadata.pinterest} className="inline-block w-6 h-6 mr-4">
+          <PinterestIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>
     </header>
