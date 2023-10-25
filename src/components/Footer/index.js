@@ -43,14 +43,14 @@ const Footer = () => {
           <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
         <a href={siteMetadata.twitter} className="inline-block w-6 h-6 mr-4">
-          <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
+          <TwitterIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
         </a>
         <a
           href={siteMetadata.github}
           className="inline-block w-6 h-6 mr-4 fill-light">
           <GithubIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
         </a>
-        <a href={siteMetadata.pinterest} className="inline-block w-6 h-6 mr-4">
+        <a href={siteMetadata.pinterest} className="inline-block w-6 h-6 mr-4 ">
           <PinterestIcon className="hover:scale-125 transition-all ease duration-200" />
         </a>
       </div>
