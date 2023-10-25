@@ -7,7 +7,7 @@ const siteMetadata = {
   language: "en-us",
   theme: "system", // system, dark or light
   siteUrl: "https://caffeine-coded.vercel.app/", // your website URL
-  siteLogo: "/logo.png",
+  siteLogo: "/robot-logo.png",
   socialBanner: "/social-banner.png", // add social banner in the public folder
   email: "TheAiBarista@gmail.com",
   github: "https://github.com/puginator",
