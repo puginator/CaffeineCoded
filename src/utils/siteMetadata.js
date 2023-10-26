@@ -17,7 +17,7 @@ const siteMetadata = {
   youtube: "https://youtube.com/",
   linkedin: "https://www.linkedin.com/in/austin-amento/",
   pinterest: "https://www.pinterest.com/theaibarista/",
-  etsy: "https://www.etsy.com/shop/TheAiBarista",
+  etsy: "https://theaibarista.etsy.com",
   locale: "en-US",
 };
 
