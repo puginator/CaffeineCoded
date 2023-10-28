@@ -4,15 +4,45 @@ import {useForm} from "react-hook-form";
 import { EtsyIcon, GithubIcon, LinkedinIcon, TwitterIcon, PinterestIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetadata";
+import { set } from "date-fns";
 
 const Footer = () => {
+    const [loading, setLoading] = React.useState(false);
     const {
       register,
       handleSubmit,
       formState: {errors},
     } = useForm();
-    const onSubmit = (data) => console.log(data);
-    console.log(errors);
+
+
+    async function onSubmit(data) {
+      const {email} = data;
+      try {
+        setLoading(true);
+        const response = await fetch("../../api/subscribe", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({email}),
+        });
+  
+        if (response.ok) {
+          // Success! Email was added to your Mailchimp list
+        } else {
+          // Error! Something went wrong
+        }
+
+      } catch (error) {
+        console.error(
+          "There has been a problem with your fetch operation:",
+          errors
+        );
+      } finally {
+        setLoading(false);
+      }
+
+    }
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-medium text-center dark:font-bold capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
@@ -20,8 +50,8 @@ const Footer = () => {
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
         Subscribe to learn new coffees you should try. Join other coffee loves
-        and stay up to date with latest reviews. © 2023 The Ai Barista. All
-        rights reserved. <br></br> Made with ❤ by The Ai Barista
+        and stay up to date with latest reviews.<br></br> © 2023 The Ai Barista.
+        All rights reserved. <br></br> Made with ❤ by The Ai Barista
       </p>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -35,6 +65,7 @@ const Footer = () => {
 
         <input
           type="submit"
+          value={loading ? "Sending..." : "Subscribe"}
           className="bg-dark dark:bg-light dark:text-dark text-light cursor-pointer  font-medium rounded px-3 sm:px-5 py-1"
         />
       </form>
