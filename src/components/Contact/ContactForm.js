@@ -3,15 +3,19 @@ import React from "react";
 import {useForm} from "react-hook-form";
 
 export default function ContactForm() {
+  const [loading, setLoading] = React.useState(false);
+  const [sent, setSent] = React.useState(false); // New state for tracking email sent status
+
   const {
     register,
     handleSubmit,
     formState: {errors},
   } = useForm();
   const onSubmit = async (data) => {
+    setLoading(true);
     try {
       //console.log(data)
-      const response = await fetch("../api/sendEmail", {
+      const response = await fetch("../../api/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -23,15 +27,28 @@ export default function ContactForm() {
         throw new Error("Network response was not ok " + response.statusText);
       }
       const responseData = await response.json();
-      console.log(responseData);
+
+      //console.log(responseData);
+      setSent(true); // Set sent to true on successful response
     } catch (error) {
       console.error(
         "There has been a problem with your fetch operation:",
         errors
       );
+    } finally {
+      setLoading(false);
     }
   };
 
+  // Logic to determine button text
+  let buttonText;
+  if (loading) {
+    buttonText = "Sending...";
+  } else if (sent) {
+    buttonText = "Sent";
+  } else {
+    buttonText = "Send Request";
+  }
 
   return (
     <form
@@ -63,9 +80,13 @@ export default function ContactForm() {
         placeholder="My project is about..."
         rows={3}
         className="w-full outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-lg border-b border-solid border-gray focus:border-gray bg-transparent"
-        {...register("project details", {required: true})}
+        {...register("project", {required: true})}
       />
-      <input type="submit" value="send request" className="dark:border-light mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark rounded cursor-pointer" />
+      <input
+        type="submit"
+        value={buttonText}
+        className="dark:border-light mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark rounded cursor-pointer"
+      />
     </form>
   );
 }
