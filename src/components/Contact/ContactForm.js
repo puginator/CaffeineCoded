@@ -28,7 +28,7 @@ export default function ContactForm() {
       }
       const responseData = await response.json();
 
-      //console.log(responseData);
+      console.log(responseData);
       setSent(true); // Set sent to true on successful response
     } catch (error) {
       console.error(
