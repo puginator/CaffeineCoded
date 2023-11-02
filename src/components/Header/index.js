@@ -8,6 +8,7 @@ import {
   TwitterIcon,
   PinterestIcon,
   EtsyIcon,
+  InstagramIcon,
 } from "../Icons";
 import Logo from "./Logo";
 import Link from "next/link";
@@ -24,7 +25,7 @@ const Header = () => {
   return (
     <header className="w-full p-4 sm:px-10 px-5 flex items-center justify-between">
       <Logo />
-      <button className="inline-block sm:hidden z-50" onClick={toggle}>
+      <button className="inline-block md:hidden z-50" onClick={toggle}>
         <div className="w-6 cursor-pointer transition-all ease duration-300 ">
           <div className="relative">
             <span
@@ -106,12 +107,12 @@ const Header = () => {
           )}
         </button>
       </nav>
-      <div className="hidden sm:flex items-center">
-        <a href={siteMetadata.linkedin} className="inline-block w-6 h-6 mr-4">
-          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
+      <div className="hidden md:flex items-center">
+        <a href={siteMetadata.instagram} className="inline-block w-6 h-6 mr-4">
+          <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
         <a href={siteMetadata.twitter} className="inline-block w-6 h-6 mr-4">
-          <TwitterIcon className="hover:scale-125 transition-all ease duration-200" />
+          <TwitterIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
         <a href={siteMetadata.github} className="inline-block w-6 h-6 mr-4">
           <GithubIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />

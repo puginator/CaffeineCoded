@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import {useForm} from "react-hook-form";
-import { EtsyIcon, GithubIcon, LinkedinIcon, TwitterIcon, PinterestIcon } from "../Icons";
+import { EtsyIcon, GithubIcon, LinkedinIcon, TwitterIcon, PinterestIcon, InstagramIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetadata";
 import { set } from "date-fns";
@@ -70,8 +70,8 @@ const Footer = () => {
         />
       </form>
       <div className="flex items-center mt-8">
-        <a href={siteMetadata.linkedin} className="inline-block w-6 h-6 mr-4">
-          <LinkedinIcon className="hover:scale-125 transition-all ease duration-200" />
+        <a href={siteMetadata.instagram} className="inline-block w-6 h-6 mr-4">
+          <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
         <a href={siteMetadata.twitter} className="inline-block w-6 h-6 mr-4">
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
@@ -82,7 +82,7 @@ const Footer = () => {
           <GithubIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
         </a>
         <a href={siteMetadata.pinterest} className="inline-block w-6 h-6 mr-4 ">
-          <PinterestIcon className="hover:scale-125 transition-all ease duration-200" />
+          <PinterestIcon className="hover:scale-125 transition-all ease duration-20" />
         </a>
         <a href={siteMetadata.etsy} className="inline-block w-6 h-6 mr-4 ">
           <EtsyIcon className="hover:scale-125 transition-all ease duration-200" />

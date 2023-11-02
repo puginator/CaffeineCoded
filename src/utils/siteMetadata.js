@@ -14,6 +14,7 @@ const siteMetadata = {
   github: "https://github.com/puginator",
   twitter: "https://twitter.com/TheAiBarista",
   facebook: "https://facebook.com/",
+  instagram: "https://www.instagram.com/the.aibarista/",
   youtube: "https://youtube.com/",
   linkedin: "https://www.linkedin.com/in/austin-amento/",
   pinterest: "https://www.pinterest.com/theaibarista/",
