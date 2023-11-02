@@ -14,7 +14,7 @@ const Logo = () => {
           priority
         />
       </div>
-      <span className="font-bold text-lg md:text-xl dark:font-semibold">
+      <span className="font-bold text-lg md:text-xl max-md:hidden dark:font-semibold">
         The Ai Barista
       </span>
     </Link>

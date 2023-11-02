@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="w-full p-4 sm:px-10 px-5 flex items-center justify-between">
       <Logo />
-      <button className="inline-block sm:hidden z-50" onClick={toggle}>
+      <button className="inline-block md:hidden z-50" onClick={toggle}>
         <div className="w-6 cursor-pointer transition-all ease duration-300 ">
           <div className="relative">
             <span
@@ -107,7 +107,7 @@ const Header = () => {
           )}
         </button>
       </nav>
-      <div className="hidden sm:flex items-center">
+      <div className="hidden md:flex items-center">
         <a href={siteMetadata.instagram} className="inline-block w-6 h-6 mr-4">
           <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
         </a>
