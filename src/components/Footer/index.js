@@ -71,7 +71,7 @@ const Footer = () => {
       </form>
       <div className="flex items-center mt-8">
         <a href={siteMetadata.instagram} className="inline-block w-6 h-6 mr-4">
-          <InstagramIcon className="hover:scale-125 transition-all ease duration-200 dark:fill-light" />
+          <InstagramIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
         </a>
         <a href={siteMetadata.twitter} className="inline-block w-6 h-6 mr-4">
           <TwitterIcon className="hover:scale-125 transition-all ease duration-200 fill-light dark:fill-dark" />
@@ -85,7 +85,7 @@ const Footer = () => {
           <PinterestIcon className="hover:scale-125 transition-all ease duration-20" />
         </a>
         <a href={siteMetadata.etsy} className="inline-block w-6 h-6 mr-4 ">
-          <EtsyIcon className="hover:scale-125 transition-all ease duration-200" />
+          <EtsyIcon className="hover:scale-125 transition-all ease duration-200 " />
         </a>
       </div>
       <div className="w-full mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-col md:flex-row items-center justify-between">
