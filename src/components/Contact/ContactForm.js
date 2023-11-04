@@ -61,7 +61,7 @@ export default function ContactForm() {
         placeholder="name"
         {...register("name", {required: true})}
       />
-      and I want to discuss a potential project. You can email me at
+      and I want to discuss a potential coffee review. You can email me at
       <input
         type="your@email"
         placeholder="email"
@@ -74,8 +74,10 @@ export default function ContactForm() {
         placeholder="your phone"
         className="outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-center placeholder:text-lg border-b border-solid border-gray focus:border-gray bg-transparent"
         {...register("phone", {required: false})}
-      />
-      Here are some details about my project: <br />
+      />.
+      <br />
+      <br />
+      Here are some details about my coffee company: <br />
       <textarea
         placeholder="My project is about..."
         rows={3}
