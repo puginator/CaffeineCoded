@@ -79,7 +79,7 @@ export default function ContactForm() {
       <br />
       Here are some details about my coffee company: <br />
       <textarea
-        placeholder="My project is about..."
+        placeholder="My coffee company is..."
         rows={3}
         className="w-full outline-none border-0 p-0 mx-2 focus:ring-0 placeholder:text-lg border-b border-solid border-gray focus:border-gray bg-transparent"
         {...register("project", {required: true})}

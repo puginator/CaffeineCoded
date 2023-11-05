@@ -6,7 +6,7 @@ import { slug } from 'github-slugger';
 
 const BlogLayoutOne = ({blog}) => {
   return (
-    <div className="group inline-block overflow-hidden rounded-xl">
+    <div className="group inline-block overflow-hidden h-full rounded-xl">
       <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-dark/90 rounded-xl z-10"></div>
       <Image
         src={blog.image.filePath.replace("../public", "")}
