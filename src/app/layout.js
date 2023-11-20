@@ -6,6 +6,7 @@ import Footer from "../components/Footer"
 import siteMetadata from "@/src/utils/siteMetadata";
 import Script from "next/script"
 import ThemeScript from "../components/ThemeScript"
+import {Analytics} from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: "--font-in" })
 
@@ -52,18 +53,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-      className={cx(
-        inter.variable, 
-        manrope.variable, 
-        'font-mr bg-light  dark:bg-dark'
-        )} 
-      >
-
-      <ThemeScript />
-      <Header />
-      {children}
-      <Footer />
+        className={cx(
+          inter.variable,
+          manrope.variable,
+          "font-mr bg-light  dark:bg-dark"
+        )}>
+        <ThemeScript />
+        <Header />
+        {children}
+        <Footer />
+        <Analytics />
       </body>
     </html>
-  )
+  );
 }
