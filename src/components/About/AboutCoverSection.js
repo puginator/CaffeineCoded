@@ -20,12 +20,19 @@ const AboutCoverSection = () => {
           Powered by AI, Perfected by Experience
         </h2>
         <p className="font-medium capitalize mt-4 text-base">
-          Hello, coffee enthusiasts and curious sippers! <br></br> Welcome to my corner of
-          the web dedicated to all things coffee. My name is Austin Amento, and
-          I've had the pleasure of immersing myself in the rich and aromatic
-          world of coffee for over a dozen years. From the birth of the bean to
-          the final brew, my journey in the coffee industry has been nothing
-          short of transformative.
+          Hello, coffee enthusiasts and curious sippers! <br></br> Welcome to my
+          corner of the web dedicated to all things coffee. My name is Austin
+          Amento, and I've had the pleasure of immersing myself in the rich and
+          aromatic world of coffee for over a dozen years. From the birth of the
+          bean to the final brew, my journey in the coffee industry has been
+          nothing short of transformative.<br /><br /> If you want to support the blog check
+          out my etsy store{" "}
+          <a
+            href="https://theaibarista.etsy.com"
+            className="!underline underline-offset-2 dark:hover:text-accentDark hover:text-accent transition-all ">
+            here
+          </a>
+          .
         </p>
       </div>
     </section>

@@ -122,7 +122,7 @@ export default function BlogPage({params}) {
           sizes="100vw"
           width={blog.image.width}
           height={blog.image.height}
-          className="w-full h-full aspect-auto object-cover object-center group-hover:scale-105 transition-all ease duration-300"
+          className="w-full h-full aspect-auto object-cover object-top group-hover:scale-105 transition-all ease duration-300"
         />
       </div>
       <BlogDetails blog={blog} slug={params.slug} />
