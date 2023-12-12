@@ -7,6 +7,7 @@ import siteMetadata from "@/src/utils/siteMetadata";
 import Script from "next/script"
 import ThemeScript from "../components/ThemeScript"
 import {Analytics} from "@vercel/analytics/react";
+import {SpeedInsights} from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: "--font-in" })
 
@@ -63,6 +64,7 @@ export default function RootLayout({ children }) {
         {children}
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
