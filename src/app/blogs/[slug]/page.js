@@ -5,6 +5,7 @@ import { allBlogs } from "contentlayer/generated"
 import { slug } from "github-slugger";
 import Image from "next/image"
 import siteMetadata from "@/src/utils/siteMetadata";
+import SimilarPosts from "@/src/components/Blog/SimilarPosts";
 
 
 export async function generateStaticParams() {
@@ -164,6 +165,7 @@ export default function BlogPage({params}) {
           </div>
           <RenderMdx blog={blog} />
         </div>
+        <SimilarPosts blogs={allBlogs} blog={blog} />
       </article>
     </>
   );
