@@ -1,7 +1,7 @@
 [
   {
     "name": "Chemex",
-    "image": "./assets/images/chemex.png",
+    "image": "/images/Chemex.png",
     "recipe": "660g Water / 44g Coffee / Chemex / Chemex Filters / Gooseneck Kettle / Scale / Timer",
     "instructions": {
       "1": "Heat Water to 205°F",
@@ -15,7 +15,7 @@
   },
   {
     "name": "Clever Dripper",
-    "image": "./assets/images/Clever.png",
+    "image": "/images/Clever.png",
     "recipe": "425g Water / 28g Coffee / Clever /  Filters / Decanter / Scale / Timer",
     "instructions": {
       "1": "Heat Water to 205°F",
@@ -29,7 +29,7 @@
   },
   {
     "name": "Aeropress",
-    "image": "./assets/images/AeroPress.png",
+    "image": "/images/AeroPress.png",
     "recipe": "230g Water / 16g Coffee / Aeropress / Aeropress Filters / Timer",
     "instructions": {
       "1": "Heat Water to 195°F",
@@ -43,7 +43,7 @@
   },
   {
     "name": "French Press",
-    "image": "./assets/images/FrenchPress.png",
+    "image": "/images/FrenchPress.png",
     "recipe": "515g Water / 33g Coffee / Scale / Timer / Spoon",
     "instructions": {
       "1": "Heat Water to 205°F",
@@ -58,7 +58,7 @@
   },
   {
     "name": "Kalita Wave",
-    "image": "./assets/images/kalitawave.png",
+    "image": "/images/kalitawave.png",
     "recipe": "385g Water / 26g Coffee / Kalita / Filters / Gooseneck Kettle / Scale / Timer",
     "instructions": {
       "1": "Heat Water to 205°F",
@@ -72,7 +72,7 @@
   },
   {
     "name": "Hario V60",
-    "image": "./assets/images/HarioV60.png",
+    "image": "/images/HarioV60.png",
     "recipe": "400g Water / 28g Coffee / V60 / Filters / Gooseneck Kettle / Scale / Timer",
     "instructions": {
       "1": "Heat Water to 205°F",
@@ -86,7 +86,7 @@
   },
   {
     "name": "Coffee Brewer",
-    "image": "./assets/images/MrCoffee.png",
+    "image": "/images/MrCoffee.png",
     "recipe": "6 Cups of Water / 6.5 Tablespoons of Coffee / Coffee Brewer / Coffee Filter",
     "instructions": {
       "1": "Eyeball 6 cups of water in your coffee pot and add to brewer",
