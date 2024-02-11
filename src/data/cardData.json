@@ -2,7 +2,9 @@
   {
     "name": "Chemex",
     "image": "/images/Chemex.png",
-    "recipe": "660g Water / 44g Coffee / Chemex / Chemex Filters / Gooseneck Kettle / Scale / Timer",
+    "recipe": "660g Water / 44g Coffee / Chemex / Chemex Filters / Gooseneck Kettle ",
+    "grounds": "44g",
+    "water": "660g, 22oz",
     "instructions": {
       "1": "Heat Water to 205°F",
       "2": "Place filter in Chemex, and rinse with hot water",
@@ -16,7 +18,9 @@
   {
     "name": "Clever Dripper",
     "image": "/images/Clever.png",
-    "recipe": "425g Water / 28g Coffee / Clever /  Filters / Decanter / Scale / Timer",
+    "recipe": "425g Water / 28g Coffee / Clever /  Filters / Decanter",
+    "grounds": "28g",
+    "water": "425g, 14oz",
     "instructions": {
       "1": "Heat Water to 205°F",
       "2": "Place filter in Clever, and rinse with hot water",
@@ -31,6 +35,8 @@
     "name": "Aeropress",
     "image": "/images/AeroPress.png",
     "recipe": "230g Water / 16g Coffee / Aeropress / Aeropress Filters / Timer",
+    "grounds": "16g",
+    "water": "230g, 8oz",
     "instructions": {
       "1": "Heat Water to 195°F",
       "2": "Place filter in basket, and rinse with hot water, and attach basket to chamber",
@@ -45,6 +51,8 @@
     "name": "French Press",
     "image": "/images/FrenchPress.png",
     "recipe": "515g Water / 33g Coffee / Scale / Timer / Spoon",
+    "grounds": "33g",
+    "water": "515g, 17oz",
     "instructions": {
       "1": "Heat Water to 205°F",
       "2": "Coarsely grind coffee and add to French Press",
@@ -59,7 +67,9 @@
   {
     "name": "Kalita Wave",
     "image": "/images/kalitawave.png",
-    "recipe": "385g Water / 26g Coffee / Kalita / Filters / Gooseneck Kettle / Scale / Timer",
+    "recipe": "385g Water / 26g Coffee / Kalita / Filters / Gooseneck Kettle",
+    "grounds": "26g",
+    "water": "385g, 13oz",
     "instructions": {
       "1": "Heat Water to 205°F",
       "2": "Place filter in Kalita, and rinse with hot water",
@@ -73,7 +83,9 @@
   {
     "name": "Hario V60",
     "image": "/images/HarioV60.png",
-    "recipe": "400g Water / 28g Coffee / V60 / Filters / Gooseneck Kettle / Scale / Timer",
+    "recipe": "400g Water / 28g Coffee / V60 / Filters / Gooseneck Kettle",
+    "grounds": "28g",
+    "water": "400g, 13oz",
     "instructions": {
       "1": "Heat Water to 205°F",
       "2": "Place filter in V60, and rinse with hot water",
@@ -88,6 +100,8 @@
     "name": "Coffee Brewer",
     "image": "/images/MrCoffee.png",
     "recipe": "6 Cups of Water / 6.5 Tablespoons of Coffee / Coffee Brewer / Coffee Filter",
+    "water": "6 cups, 48 oz",
+    "grounds": "6.5 tbsp",
     "instructions": {
       "1": "Eyeball 6 cups of water in your coffee pot and add to brewer",
       "2": "Place coffee filter in brew basket",
