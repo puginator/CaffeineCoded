@@ -14,7 +14,7 @@ export default function BrewCards() {
   const cards = data.map((card) => (
     <div
       key={card.name}
-      className="w-full md:max-w-[450px] border dark:border-light border-accent  rounded-md px-2 py-2">
+      className="w-full md:max-w-[450px] border-2 dark:border-light border-accent  rounded-md px-2 py-2">
       <div className="flex flex-col items-start justify-center">
         <div className="flex items-center justify-between w-full mb-4">
           <h1 className="whitespace-nowrap tracking-tight text-lg font-semibold text-accent dark:text-light">
