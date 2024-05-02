@@ -16,7 +16,7 @@ const BlogLayoutOne = ({blog}) => {
         width={blog.image.width}
         height={blog.image.height}
         sizes="(max-width: 1180) 100vw, 100vw"
-        className="cursor-pointer w-full h-full object-center object-cover group-hover:scale-105 rounded-xl transition-all ease duration-300"
+        className="cursor-pointer max-sxl:w-screen w-full h-full max-sm:max-h-none max-sxl:max-h-[300px] object-center object-cover group-hover:scale-105 rounded-xl transition-all ease duration-300"
       />
 
       <div className="absolute bottom-0 p-4 xs:p-6 sm:p-10 z-20 w-full">
