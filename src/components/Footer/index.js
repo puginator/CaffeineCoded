@@ -4,10 +4,10 @@ import {useForm} from "react-hook-form";
 import { EtsyIcon, GithubIcon, LinkedinIcon, TwitterIcon, PinterestIcon, InstagramIcon } from "../Icons";
 import Link from "next/link";
 import siteMetadata from "@/src/utils/siteMetadata";
-import { set } from "date-fns";
 
 const Footer = () => {
     const [loading, setLoading] = React.useState(false);
+    const currentYear = new Date().getFullYear();
     const {
       register,
       handleSubmit,
@@ -50,7 +50,7 @@ const Footer = () => {
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
         Subscribe to learn new coffees you should try. Join other coffee loves
-        and stay up to date with latest reviews.<br></br> © 2023 The Ai Barista.
+        and stay up to date with latest reviews.<br></br> © {currentYear} The Ai Barista.
         All rights reserved. <br></br> Made with ❤ by The Ai Barista
       </p>
       <form
@@ -90,7 +90,7 @@ const Footer = () => {
       </div>
       <div className="w-full mt-16 md:mt-24 relative font-medium border-t border-solid border-light py-6 px-8 flex flex-col md:flex-row items-center justify-between">
         <span className="text-center">
-          &copy;2023 The Ai Barista. All rights reserved.
+          &copy;{currentYear} The Ai Barista. All rights reserved.
         </span>
         <Link
           href="/sitemap.xml"
