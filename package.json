@@ -7,7 +7,11 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "blog:new": "node scripts/coffee-post.js new",
+    "blog:prompt": "node scripts/coffee-post.js prompt",
+    "blog:draft": "node scripts/coffee-post.js draft",
+    "blog:images": "node scripts/coffee-post.js images"
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.2.1",

@@ -56,6 +56,85 @@ For more Images please check the [project images](https://github.com/codebucks27
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## AI Coffee Post Workflow
+
+This repo now includes a small CLI to turn structured tasting notes into a draft `index.mdx`.
+
+### 1) Create a new post workspace
+
+```bash
+npm run blog:new -- --slug coffee-review-your-roaster-your-coffee
+```
+
+This creates `content/<slug>/notes.md`.
+
+You can also auto-generate the folder name from coffee and roaster:
+
+```bash
+npm run blog:new -- --coffee "Keramo Sidama" --roaster "Presta Coffee"
+```
+
+This creates a matching folder like `content/coffee-review-presta-coffee-keramo-sidama/notes.md`.
+
+### 2) Fill in `notes.md`
+
+Add your detailed tasting notes and frontmatter details:
+- `coffeeName`, `roaster`, `origin`, `process`
+- `brewMethod`, `brewRecipe`
+- `availability`, `purchaseUrl`, `websiteUrl`
+- `image` (optional; if omitted, draft mode can generate one automatically)
+- `tags`
+
+If you provide `image`, make sure that file exists at `public/blogs/...`.
+
+### 3) Generate an AI prompt (manual mode)
+
+```bash
+npm run blog:prompt -- --slug coffee-review-your-roaster-your-coffee
+```
+
+This creates `content/<slug>/ai-prompt.md` that you can paste into ChatGPT.
+
+### 4) Generate `index.mdx` directly via API (automated mode)
+
+```bash
+OPENAI_API_KEY=your_key_here npm run blog:draft -- --slug coffee-review-your-roaster-your-coffee
+```
+
+If `OPENAI_API_KEY` is not exported in your shell, the script also checks `.env.local` and `.env`.
+
+This now creates:
+- `content/<slug>/index.mdx`
+- `content/<slug>/image-prompts.md` (saved prompts for manual reuse)
+- `public/blogs/<image-base>.webp` plus inline variants like `-1.webp`, `-2.webp` (unless skipped)
+
+Optional:
+- `--model <model>` to override model (default: `gpt-4.1-mini` or `OPENAI_MODEL`)
+- `--image-count <n>` total images (hero + inline, default `3`)
+- `--image-model <name>` image model (default: `gpt-image-1`)
+- `--image-size <size>` image size (default: `1536x1024`)
+- `--image-base <name>` custom filename base in `public/blogs`
+- `--skip-image-generation` to create prompts only and skip API image creation
+- `--force` to overwrite existing draft files
+
+### 5) Regenerate or sync images only
+
+```bash
+npm run blog:images -- --slug coffee-review-your-roaster-your-coffee
+```
+
+This command:
+- creates/updates `content/<slug>/image-prompts.md`
+- generates images in `public/blogs/` (unless skipped)
+- updates image paths in `content/<slug>/index.mdx` if that file exists
+
+Useful options:
+- `--skip-image-generation` to only refresh prompts + MDX image paths
+- `--no-mdx-sync` to generate prompts/images without changing `index.mdx`
+- `--image-count <n>` to control hero + inline image count
+- `--image-base <name>` to set the filename base
+- `--force` to overwrite existing generated image files
+
 ## Getting Started
 
 First, run the development server:
